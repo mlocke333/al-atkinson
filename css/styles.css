@@ -143,8 +143,9 @@ a { color: var(--river-deep); }
 
 /* Hero */
 .hero {
-  padding: 3.2rem 0 2.4rem;
+  padding: 3.2rem 0 4.6rem;
   position: relative;
+  background: linear-gradient(180deg, transparent 55%, #9ee9ff 100%);
 }
 
 .hero-grid {
@@ -236,9 +237,46 @@ h2 { font-size: clamp(1.7rem, 3vw, 2.4rem); }
 
 /* Sections */
 section { padding: 3.2rem 0; }
-.band-sky { background: linear-gradient(180deg, #8cebff, #d9f8ff); }
-.band-gold { background: linear-gradient(180deg, #ffe566, #fff4b0); }
-.band-mint { background: linear-gradient(180deg, #b7ffd4, #e9fff2); }
+.band-sky,
+.band-gold,
+.band-mint { position: relative; }
+
+.band-sky {
+  padding: 4.4rem 0 5rem;
+  margin-top: -1.6rem;
+  background: linear-gradient(
+    180deg,
+    #9ee9ff 0%,
+    #7ae0ff 18%,
+    #c9f6ff 52%,
+    #ffe566 100%
+  );
+}
+
+.band-gold {
+  padding: 4.4rem 0 5rem;
+  margin-top: -0.4rem;
+  background: linear-gradient(
+    180deg,
+    #ffe566 0%,
+    #ffd54f 22%,
+    #fff0a8 55%,
+    #9dffc4 100%
+  );
+}
+
+.band-mint {
+  padding: 4.4rem 0 5.4rem;
+  margin-top: -0.4rem;
+  background: linear-gradient(
+    180deg,
+    #9dffc4 0%,
+    #b7ffd4 20%,
+    #e4fff0 58%,
+    #c9a4ff 86%,
+    #7b2cbf 100%
+  );
+}
 
 .section-head {
   display: flex;
@@ -468,10 +506,17 @@ input:focus, textarea:focus {
   display: block;
   width: 100%;
   height: 52px;
+  margin-top: -1px;
+}
+
+main > section:last-of-type:not(.band-sky):not(.band-gold):not(.band-mint) {
+  padding-bottom: 4.8rem;
+  background: linear-gradient(180deg, transparent 28%, #ddc6ff 78%, #7b2cbf 100%);
 }
 
 .page-hero {
-  padding: 2.4rem 0 1.2rem;
+  padding: 2.4rem 0 2.8rem;
+  background: linear-gradient(180deg, transparent 40%, rgba(158, 233, 255, 0.55) 100%);
 }
 
 .prose { max-width: 44rem; }
