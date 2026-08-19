@@ -148,6 +148,12 @@ a { color: var(--river-deep); }
   background: linear-gradient(180deg, transparent 55%, #9ee9ff 100%);
 }
 
+.page-home .hero {
+  min-height: calc(100vh - 210px);
+  padding-bottom: 5.2rem;
+  background: linear-gradient(180deg, transparent 36%, #9ee9ff 62%, #ddc6ff 88%, #7b2cbf 100%);
+}
+
 .hero-grid {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
@@ -509,7 +515,7 @@ input:focus, textarea:focus {
   margin-top: -1px;
 }
 
-main > section:last-of-type:not(.band-sky):not(.band-gold):not(.band-mint) {
+main > section:last-of-type:not(.band-sky):not(.band-gold):not(.band-mint):not(.hero) {
   padding-bottom: 4.8rem;
   background: linear-gradient(180deg, transparent 28%, #ddc6ff 78%, #7b2cbf 100%);
 }
