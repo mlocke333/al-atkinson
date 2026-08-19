@@ -1,18 +1,19 @@
 :root {
-  --ink: #2a241c;
-  --ink-soft: #5a5148;
-  --paper: #fff8ef;
-  --paper-2: #f4ead8;
-  --cream: #fffdf8;
-  --river: #1f7a86;
-  --river-deep: #14555e;
-  --sky: #8ec5d6;
-  --salmon: #e07a52;
-  --gold: #e8b84a;
-  --leaf: #4d8b57;
-  --wood: #c48a4a;
-  --line: rgba(42, 36, 28, 0.12);
-  --shadow: 0 18px 40px rgba(42, 36, 28, 0.1);
+  --ink: #2a2d4a;
+  --ink-soft: #4e5678;
+  --paper: #fff8e4;
+  --paper-2: #ffe7a8;
+  --cream: #fffdf6;
+  --river: #12b5c9;
+  --river-deep: #0a8a9a;
+  --sky: #7ad7ff;
+  --salmon: #ff6a4a;
+  --gold: #ffc429;
+  --leaf: #3ecf72;
+  --wood: #ff9f43;
+  --footer: #13b8cc;
+  --line: rgba(42, 45, 74, 0.12);
+  --shadow: 0 18px 40px rgba(18, 181, 201, 0.16);
   --radius: 22px;
   --max: 1120px;
   --sans: "Nunito", system-ui, sans-serif;
@@ -31,8 +32,9 @@ body {
   font-family: var(--sans);
   color: var(--ink);
   background:
-    radial-gradient(circle at 12% 8%, rgba(232, 184, 74, 0.18), transparent 28%),
-    radial-gradient(circle at 90% 0%, rgba(142, 197, 214, 0.28), transparent 32%),
+    radial-gradient(circle at 8% 6%, rgba(255, 196, 41, 0.45), transparent 30%),
+    radial-gradient(circle at 92% 4%, rgba(122, 215, 255, 0.5), transparent 34%),
+    radial-gradient(circle at 80% 80%, rgba(255, 106, 74, 0.16), transparent 28%),
     var(--paper);
   line-height: 1.65;
 }
@@ -63,7 +65,7 @@ a { color: var(--river-deep); }
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(255, 248, 239, 0.9);
+  background: rgba(255, 251, 232, 0.92);
   backdrop-filter: blur(12px);
   border-bottom: 2px dashed var(--line);
 }
@@ -194,7 +196,7 @@ h2 { font-size: clamp(1.7rem, 3vw, 2.4rem); }
 .btn-primary {
   background: var(--salmon);
   color: white;
-  box-shadow: 0 6px 0 #b85a38;
+  box-shadow: 0 6px 0 #d94a2e;
 }
 .btn-primary:hover { transform: translateY(-1px); }
 
@@ -258,8 +260,8 @@ section { padding: 3.2rem 0; }
   flex-direction: column;
 }
 
-.book-card.upstream { background: linear-gradient(180deg, #e7f6f8, #fffdf8); }
-.book-card.chew { background: linear-gradient(180deg, #fff3dd, #fffdf8); }
+.book-card.upstream { background: linear-gradient(180deg, #c9f4ff, #fffdf6); }
+.book-card.chew { background: linear-gradient(180deg, #ffe08a, #fff7d6); }
 
 .book-visual {
   height: 230px;
@@ -279,13 +281,13 @@ section { padding: 3.2rem 0; }
 .book-visual.upstream-art {
   background:
     radial-gradient(circle at 20% 20%, #fff, transparent 25%),
-    linear-gradient(160deg, #49a8b6, #1f7a86 55%, #e07a52);
+    linear-gradient(160deg, #7ad7ff, #12b5c9 48%, #ff6a4a);
 }
 
 .fish {
   width: 78%;
   height: 92px;
-  background: #f08a62;
+  background: #ff7a4a;
   border-radius: 60px 80px 80px 60px;
   position: relative;
   box-shadow: inset -12px -10px 0 rgba(0,0,0,0.08);
@@ -296,7 +298,7 @@ section { padding: 3.2rem 0; }
   right: -28px;
   top: 18px;
   border: 28px solid transparent;
-  border-left-color: #d96a45;
+  border-left-color: #ff4d2e;
 }
 .fish::after {
   content: "";
@@ -305,7 +307,7 @@ section { padding: 3.2rem 0; }
   top: 32px;
   width: 12px;
   height: 12px;
-  background: #2a241c;
+  background: #2a2d4a;
   border-radius: 50%;
 }
 
@@ -313,12 +315,13 @@ section { padding: 3.2rem 0; }
 .book-body p { margin-top: 0; }
 .pill-row { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.8rem 0 1rem; }
 .pill {
-  background: white;
+  background: #fff4b8;
   border-radius: 999px;
   padding: 0.25rem 0.7rem;
   font-size: 0.8rem;
   font-weight: 800;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(255, 196, 41, 0.55);
+  color: #7a4a00;
 }
 
 /* Awards */
@@ -439,11 +442,11 @@ input:focus, textarea:focus {
 /* Footer */
 .site-footer {
   margin-top: 2rem;
-  background: var(--ink);
-  color: #f6efe3;
+  background: var(--footer);
+  color: #fffdf6;
   padding: 2.2rem 0 1.4rem;
 }
-.site-footer a { color: #f1d48a; }
+.site-footer a { color: #fff3a8; }
 .footer-grid {
   display: grid;
   grid-template-columns: 1.4fr 1fr 1fr;
